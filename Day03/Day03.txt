@@ -1,0 +1,167 @@
+Microsoft Windows [Version 10.0.22631.5039]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\2022ict118>cd desktop
+
+C:\Users\2022ict118\Desktop>cd it1214
+
+C:\Users\2022ict118\Desktop\IT1214>cd day02copy
+
+C:\Users\2022ict118\Desktop\IT1214\Day02Copy>javac App.java
+App.java:17: error: cannot find symbol
+                FourthYear itHons = new Fourthyear();
+                                        ^
+  symbol:   class Fourthyear
+  location: class App
+1 error
+
+C:\Users\2022ict118\Desktop\IT1214\Day02Copy>javac App.java
+
+C:\Users\2022ict118\Desktop\IT1214\Day02Copy>java App
+Hi from FirstYear in AMC
+Hi from FirstYear in IT
+Hi from SecondYear in AMC
+Hi from FourthYear in IT.Hons
+
+C:\Users\2022ict118\Desktop\IT1214\Day02Copy>tree
+Folder PATH listing
+Volume serial number is 96E8-8CF4
+C:.
+├───amc
+└───it
+    └───hons
+
+C:\Users\2022ict118\Desktop\IT1214\Day02Copy>cd..
+
+C:\Users\2022ict118\Desktop\IT1214>cd day03
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>mkdir a b
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>tree
+Folder PATH listing
+Volume serial number is 96E8-8CF4
+C:.
+├───a
+└───b
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+App.java:6: error: Test is not public in a; cannot be accessed from outside package
+                a.Test t1 = new a.Test();
+                 ^
+App.java:6: error: Test is not public in a; cannot be accessed from outside package
+                a.Test t1 = new a.Test();
+                                 ^
+App.java:7: error: Test is not public in b; cannot be accessed from outside package
+                b.Test t2 = new b.Test();
+                 ^
+App.java:7: error: Test is not public in b; cannot be accessed from outside package
+                b.Test t2 = new b.Test();
+                                 ^
+App.java:8: error: cannot find symbol
+                a.print();
+                ^
+  symbol:   variable a
+  location: class App
+App.java:9: error: cannot find symbol
+                b.print();
+                ^
+  symbol:   variable b
+  location: class App
+6 errors
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+App.java:8: error: cannot find symbol
+                a.print();
+                ^
+  symbol:   variable a
+  location: class App
+App.java:9: error: cannot find symbol
+                b.print();
+                ^
+  symbol:   variable b
+  location: class App
+2 errors
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+App.java:8: error: cannot find symbol
+                a.t1.print();
+                 ^
+  symbol:   class t1
+  location: package a
+App.java:9: error: cannot find symbol
+                b.t2.print();
+                 ^
+  symbol:   class t2
+  location: package b
+2 errors
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>java App
+Hi from Test in Package A
+Hi from Test in Package B
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+.\b\Test.java:8: error: '{' expected
+        public class display(){
+                            ^
+.\b\Test.java:9: error: <identifier> expected
+                System.out.println("Display: Hi from Test in Package B");
+                                  ^
+.\b\Test.java:9: error: illegal start of type
+                System.out.println("Display: Hi from Test in Package B");
+                                   ^
+.\b\Test.java:9: error: cannot find symbol
+                System.out.println("Display: Hi from Test in Package B");
+                      ^
+  symbol:   class out
+  location: class System
+App.java:9: error: print() is not public in Test; cannot be accessed from outside package
+                t2.print();
+                  ^
+5 errors
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+.\b\Test.java:8: error: '{' expected
+        public class display(){
+                            ^
+.\b\Test.java:9: error: <identifier> expected
+                System.out.println("Display: Hi from Test in Package B");
+                                  ^
+.\b\Test.java:9: error: illegal start of type
+                System.out.println("Display: Hi from Test in Package B");
+                                   ^
+.\b\Test.java:9: error: cannot find symbol
+                System.out.println("Display: Hi from Test in Package B");
+                      ^
+  symbol:   class out
+  location: class System
+App.java:9: error: cannot find symbol
+                t2.display();
+                  ^
+  symbol:   method display()
+  location: variable t2 of type Test
+5 errors
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>java App
+Hi from Test in Package A
+Display: Hi from Test in Package B
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+App.java:9: error: print() is not public in Test; cannot be accessed from outside package
+                t2.print();
+                  ^
+1 error
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>javac App.java
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>java App
+Hi from Test in Package A
+Hi from Test in Package B
+Display: Hi from Test in Package B
+
+C:\Users\2022ict118\Desktop\IT1214\Day03>
